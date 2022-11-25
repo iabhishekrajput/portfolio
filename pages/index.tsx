@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
-        <title>Abhishek's Portfolio</title>
+        <title>Abhishek&apos;s Portfolio</title>
       </Head>
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="">
+      <section id="hero">
         <Hero />
       </section>
 
