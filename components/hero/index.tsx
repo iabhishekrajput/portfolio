@@ -9,27 +9,27 @@ function Hero({}: Props) {
   const [text] = useTypewriter({
     words: [
       "Hi, the name's Abhishek!",
-      "Guy-who-loves-Coffee.tsx",
+      "Guy-who-loves-Juice.tsx",
       "<ButLovesToCodeMore />",
     ],
     loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center">
+    <div className="flex flex-col items-center justify-center h-screen space-y-8 text-center">
       <BackgroundCircles />
       <Image
         alt="Photo"
         src="https://drive.google.com/uc?id=1lM1iXycblPtKq5O9yks-o1V0ar56FxxY"
         width={120}
         height={120}
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="relative object-cover w-32 h-32 mx-auto rounded-full"
       />
       <div className="z-10">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="px-10 text-5xl font-semibold lg:text-6xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
